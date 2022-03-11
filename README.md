@@ -50,13 +50,13 @@ Tasks {
     done: Boolean,
 }
 
-Tasks {
+Note {
     name: String,
     description: String,
     date: Date,
 }
 
-Tasks {
+User {
    user_id: String,
   score: Number,
 }
