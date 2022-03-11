@@ -1,0 +1,34 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Mihai-CV/ACHIEVEMENT-TASKS.git",
+  "author": "Mihai <vacniucmihai@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "seed": "nodemon src/scripts/seed.ts"
+  },
+  "dependencies": {
+    "@types/pino": "^7.0.5",
+    "dotenv": "^16.0.0",
+    "fastify": "^3.27.2",
+    "fastify-auth0-verify": "^0.7.0",
+    "fastify-blipp": "^3.1.0",
+    "fastify-cors": "^6.0.2",
+    "fastify-formbody": "^5.2.0",
+    "mongoose": "^6.2.2",
+    "nodemon": "^2.0.15",
+    "pino": "^7.8.0",
+    "pino-pretty": "^7.5.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.28.0"
+  }
+}

@@ -21,9 +21,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "quotes": "off",
         "linebreak-style": "off",
-        "object-curly-spacing": "off",
-        "camelcase": "off"
+        
     }
 }
