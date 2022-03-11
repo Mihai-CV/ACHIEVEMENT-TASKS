@@ -218,7 +218,7 @@ li {
 }
 
 .subScore{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: #f9ba17;
     margin-block: 1rem;
@@ -231,6 +231,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .sinh2{
@@ -265,3 +266,31 @@ li {
     transition: all 0.1s ease;
     box-shadow: 0 0 0 0 #fff, 0 0 0 3px #f9ba17;
   }
+
+.imgTask{
+    position: absolute;
+    right: 4rem;
+    top: 10rem;
+    z-index: -1;
+}
+
+.imgTask2{
+    position: absolute;
+    left: -1rem;
+    top: 22rem;
+    z-index: -1;
+}
+.btn-logOut{
+display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 10px 18px;
+  border: 0;
+  color: #3a4149;
+  background: #e7ebee;
+  line-height: 1.15;
+  font-size: 14px;
+  text-decoration: none;
+}

@@ -15,13 +15,7 @@ const Store = createStore({
       });
       await addTasks({ description, achievement, user_id });
     },
-     /* getLocalTask: () => async({ setState, getState }) => {
-      const currentTasks = getState().tasks;
-      const recivedTasks = await fetcher();
-      setState({
-        tasks: [...currentTasks,  ...recivedTasks],
-      })
-    },  */
+
     removeTask: (id) => async({ setState, getState }) => {
       const currentTasks = getState().tasks;
       await deleteTask(id);
@@ -31,19 +25,6 @@ const Store = createStore({
     },
     markTask: (id, achievement, done, scoreTotal, data) => async({ setState, getState }) => {
       const currentTasks = data;
-      //console.log("markcheck", data);
-      /* setState({
-        tasks: currentTasks?.map((task) => {
-          if(task._id === id) {
-            console.log(task.scoreTotal);
-      
-            return {
-              ...task, done: !task.done, scoreTotal: done == true ? task.scoreTotal += achievement : task.scoreTotal
-            };
-          }
-          return task;
-        })
-      }) */
       
       if(done){
         done=true;

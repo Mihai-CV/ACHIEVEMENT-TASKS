@@ -13,8 +13,9 @@ export const Score = () => {
   };
 
   const styleMenu = (menu) => ({
-    transition: "opacity 0.8s ease",
-    opacity: menu ? "1" : "0", 
+    transition: "all 0.8s ease",
+    opacity: menu ? "1" : "0",
+    transform: menu ? "translate(0px, 20px)" : "translate(0)",
   })
 
   let arr = [];

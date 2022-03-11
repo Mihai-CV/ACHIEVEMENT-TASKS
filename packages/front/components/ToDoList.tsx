@@ -14,12 +14,6 @@ export const ToDo = () => {
     const user_id = user?.sub; 
 
     const { data } = useSWR([`/tasks`, user_id], fetcher);
-    /* useEffect(() => {
-      const intervalID = setInterval(() => {
-      getLocalTask();
-    }, 100);
-    return () => clearInterval(intervalID);
-    }, []) */
 
     return (
       <div>

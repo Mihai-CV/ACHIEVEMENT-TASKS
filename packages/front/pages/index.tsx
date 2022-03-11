@@ -4,6 +4,9 @@ import React from "react";
 import { Profile } from "../components/Profile";
 import { Score } from "../components/Score";
 import { ToDo } from "../components/ToDoList";
+import noteIm from "../public/noteImg.png"
+import noteIm2 from "../public/undraw_Agree_re_hor9.png"
+import Image from 'next/image'
 
 const IndexPage = () => {
   const { user } = useUser();
@@ -19,6 +22,14 @@ const IndexPage = () => {
           <a href="/api/auth/login" className="btnLogin">
             Login
           </a>
+          <div className="imgTask">
+            <Image  src={noteIm} alt="as" width={800}
+        height={800}/>
+          </div>
+          <div className="imgTask2">
+            <Image  src={noteIm2} alt="as" width={900}
+        height={600}/>
+          </div>
         </div>
       )}
       {user && (

@@ -38,6 +38,30 @@ final-project
     ├── lerna.json
     └── README.md
 ```
+## Models
+
+```console
+Tasks {
+    description: String,
+    achievement: Number,
+    scoreTotal: Number,
+    user_id: String,
+    toDoTag: String,
+    done: Boolean,
+}
+
+Tasks {
+    name: String,
+    description: String,
+    date: Date,
+}
+
+Tasks {
+   user_id: String,
+  score: Number,
+}
+
+```
 
 ## Technologies
 
